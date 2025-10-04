@@ -1,0 +1,8 @@
+# Redirect www to non-www
+https://www.bmaxfilms.netlify.app/* https://bmaxfilms.netlify.app/:splat 301!
+
+# Redirect old .com domain to new Netlify domain (if needed)
+https://bmaxfilms.com/* https://bmaxfilms.netlify.app/:splat 301!
+
+# Custom 404 redirect
+/* /index.html 404

@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+<title>Contact Bmaxfilms | Cinematography & Photography Services in Abuja</title>
+<meta name="description" content="Contact Bmaxfilms today for professional cinematography and photography services in Abuja, Nigeria. Book us for weddings, documentaries, real estate, and events.">
+<meta name="keywords" content="contact Bmaxfilms, Abuja cinematography, Abuja photography, wedding videography Abuja, photography inquiry Nigeria, video production booking">
+<meta name="author" content="Bmaxfilms">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Contact Bmaxfilms - Cinematography & Photography Services in Abuja">
+<meta property="og:description" content="Reach out to Bmaxfilms for bookings and inquiries. Professional photography and cinematography for weddings, real estate, and documentaries in Abuja, Nigeria.">
+<meta property="og:image" content="https://bmaxfilms.netlify.app/images/Bmax-logo.png">
+<meta property="og:url" content="https://bmaxfilms.netlify.app/contact">
+<meta property="og:type" content="website">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://bmaxfilms.netlify.app/contact">
+
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Additional Modern Contact Styles */
+        .page-wrapper {
+            padding-top: 80px;
+            min-height: 100vh;
+        }
+
+        .contact-hero {
+            background: var(--gradient-secondary);
+            padding: 100px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: moveGrid 20s linear infinite;
+        }
+
+        @keyframes moveGrid {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .contact-hero h1 {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+            font-weight: 700;
+        }
+
+        .contact-hero p {
+            font-size: 1.3rem;
+            color: rgba(255,255,255,0.95);
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: -60px auto 0;
+            padding: 0 20px 80px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .contact-info-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-hover);
+            border: 1px solid var(--border-color);
+            height: fit-content;
+        }
+
+        .contact-info-card h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            opacity: 1; /* Explicit initial opacity to prevent flash */
+            will-change: transform;
+        }
+
+        .info-item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow);
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .info-content h3 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .info-content p,
+        .info-content a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            line-height: 1.6;
+        }
+
+        .info-content a:hover {
+            color: var(--accent-primary);
+        }
+
+        /* Modern Social Icons Section */
+        .social-section {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+        }
+
+        .social-section h3 {
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .social-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem 1rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+            opacity: 1; /* Explicit initial opacity to prevent flash */
+            will-change: transform, scale;
+        }
+
+        .social-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 0;
+        }
+
+        .social-link:hover::before {
+            opacity: 1;
+        }
+
+        .social-link i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .social-link span {
+            font-size: 0.85rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: transparent;
+        }
+
+        .social-link:hover i,
+        .social-link:hover span {
+            color: white;
+        }
+
+        /* Instagram specific colors */
+        .social-link[data-platform="instagram"] i {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .social-link[data-platform="facebook"] i { color: #1877f2; }
+        .social-link[data-platform="youtube"] i { color: #ff0000; }
+        .social-link[data-platform="twitter"] i { color: #1da1f2; }
+        .social-link[data-platform="linkedin"] i { color: #0a66c2; }
+        .social-link[data-platform="tiktok"] i { color: #000000; }
+        .social-link[data-platform="pinterest"] i { color: #e60023; }
+        .social-link[data-platform="vimeo"] i { color: #1ab7ea; }
+        .social-link[data-platform="whatsapp"] i { color: #25d366; }
+
+        [data-theme="dark"] .social-link[data-platform="tiktok"] i { color: #ffffff; }
+
+        /* Instagram Accounts Section */
+        .instagram-accounts {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(240,148,51,0.1) 0%, rgba(188,24,136,0.1) 100%);
+            border-radius: 12px;
+            border: 2px solid rgba(240,148,51,0.3);
+        }
+
+        [data-theme="dark"] .instagram-accounts {
+            background: linear-gradient(135deg, rgba(240,148,51,0.15) 0%, rgba(188,24,136,0.15) 100%);
+            border-color: rgba(240,148,51,0.4);
+        }
+
+        .instagram-accounts h3 {
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .instagram-accounts h3 i {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.5rem;
+        }
+
+        .ig-accounts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .ig-account {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--card-bg);
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid var(--border-color);
+            opacity: 1; /* Explicit initial opacity to prevent flash */
+            will-change: transform;
+        }
+
+        .ig-account:hover {
+            transform: translateX(5px);
+            border-color: #e6683c;
+            box-shadow: var(--shadow);
+        }
+
+        .ig-account i {
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            flex-shrink: 0;
+        }
+
+        .ig-account-info h4 {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+
+        .ig-account-info p {
+            color: var(--text-primary);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        /* Contact Form */
+        .contact-form-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-hover);
+            border: 1px solid var(--border-color);
+        }
+
+        .contact-form-card h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        .submit-button {
+            background: var(--gradient-secondary);
+            color: white;
+            border: none;
+            padding: 1.2rem 3rem;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-primary);
+            transition: left 0.5s ease;
+            z-index: 0;
+        }
+
+        .submit-button:hover::before {
+            left: 0;
+        }
+
+        .submit-button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Form Logo Section */
+        .form-logo-section {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .form-logo-section img {
+            max-width: 120px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: var(--bg-secondary);
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--text-primary);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            opacity: 1; /* Explicit initial opacity to prevent flash */
+            will-change: transform;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .faq-item h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .faq-item h3 i {
+            color: var(--accent-primary);
+            font-size: 1rem;
+        }
+
+        .faq-item p {
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ig-accounts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .contact-hero p {
+                font-size: 1.1rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .social-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .form-logo-section img {
+                max-width: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-hero {
+                padding: 80px 20px 60px;
+            }
+
+            .contact-hero h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info-card,
+            .contact-form-card {
+                padding: 1.5rem;
+            }
+
+            .social-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .info-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-container">
+                    <img src="./pictures/Bmax-logo.png" alt="B-Max Films Logo" class="logo-img">
+                    <span class="logo-text">B-Max Films</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="fas fa-home nav-icon"></i>
+                    Home
+                </a></li>
+                <li><a href="services.html">
+                    <i class="fas fa-video nav-icon"></i>
+                    Services
+                </a></li>
+                <li><a href="portfolio.html">
+                    <i class="fas fa-images nav-icon"></i>
+                    Portfolio
+                </a></li>
+                <li><a href="about.html">
+                    <i class="fas fa-users nav-icon"></i>
+                    About
+                </a></li>
+                <li><a href="contact.html" class="active">
+                    <i class="fas fa-envelope nav-icon"></i>
+                    Contact
+                </a></li>
+                <li><a href="book.html" class="cta-button">
+                    <i class="fas fa-calendar-check nav-icon"></i>
+                    Book Now
+                </a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div class="mobile-dropdown" id="mobileDropdown">
+            <div class="dropdown-content">
+                <div class="dropdown-header">
+                    <div class="dropdown-logo">
+                        <img src="./pictures/Bmax-logo.png" alt="B-Max Films Logo" class="dropdown-logo-img">
+                        <span class="dropdown-logo-text">B-Max Films</span>
+                    </div>
+                </div>
+                
+                <div class="dropdown-nav">
+                    <a href="index.html" class="dropdown-link">
+                        <i class="fas fa-home dropdown-icon"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="services.html" class="dropdown-link">
+                        <i class="fas fa-video dropdown-icon"></i>
+                        <span>Services</span>
+                    </a>
+                    <a href="portfolio.html" class="dropdown-link">
+                        <i class="fas fa-images dropdown-icon"></i>
+                        <span>Portfolio</span>
+                    </a>
+                    <a href="about.html" class="dropdown-link">
+                        <i class="fas fa-users dropdown-icon"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="contact.html" class="dropdown-link">
+                        <i class="fas fa-envelope dropdown-icon"></i>
+                        <span>Contact</span>
+                    </a>
+                    <a href="book.html" class="dropdown-cta">
+                        <i class="fas fa-calendar-check dropdown-icon"></i>
+                        <span>Book Now</span>
+                    </a>
+                </div>
+                
+                <div class="dropdown-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/bmax_tv" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Vimeo">
+                            <i class="fab fa-vimeo"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- ============================================
+         MOBILE BOTTOM NAVIGATION - HTML
+         ============================================ -->
+    
+         <nav class="bottom-mobile-nav" id="bottomMobileNav">
+            <div class="bottom-nav-container">
+                <a href="index.html" class="bottom-nav-item" data-page="home">
+                    <i class="fas fa-home bottom-nav-icon"></i>
+                    <span class="bottom-nav-label">Home</span>
+                </a>
+                <a href="services.html" class="bottom-nav-item" data-page="services">
+                    <i class="fas fa-video bottom-nav-icon"></i>
+                    <span class="bottom-nav-label">Services</span>
+                </a>
+                <a href="book.html" class="bottom-nav-item active" data-page="book">
+                    <i class="fas fa-calendar-check bottom-nav-icon"></i>
+                    <span class="bottom-nav-label">Book</span>
+                </a>
+                <a href="portfolio.html" class="bottom-nav-item" data-page="portfolio">
+                    <i class="fas fa-images bottom-nav-icon"></i>
+                    <span class="bottom-nav-label">Portfolio</span>
+                </a>
+                <a href="contact.html" class="bottom-nav-item" data-page="contact">
+                    <i class="fas fa-envelope bottom-nav-icon"></i>
+                    <span class="bottom-nav-label">Contact</span>
+                </a>
+            </div>
+        </nav>    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Let's Create Together</h1>
+                <p>Ready to capture your story? We're here to bring your vision to life with professional cinematography</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <div class="contact-grid">
+            <!-- Contact Information -->
+            <div class="contact-info-card">
+                <h2>Get in Touch</h2>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:bmaxfilms@gmail.com">BmaxFilms@gmail.com</a></p>
+                        <p><a href="mailto:bmaxfilms@gmail.com">BmaxFilms@gmail.com</a></p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+2349052785535">+234 (9052) 785 535</a></p>
+                        <p><a href="tel:+234 9052 785 535">+234 (9052) 785 535</a></p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Visit Us</h3>
+                        <p>FCT Abuja,<br>Nigeria</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday - Sunday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="social-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-grid">
+                        <a href="https://facebook.com/bmaxfilms" target="_blank" class="social-link" data-platform="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="https://instagram.com/bmax_tv" target="_blank" class="social-link" data-platform="instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://youtube.com/@bmaxfilms" target="_blank" class="social-link" data-platform="youtube">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://twitter.com/bmaxfilms" target="_blank" class="social-link" data-platform="twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://linkedin.com/company/bmaxfilms" target="_blank" class="social-link" data-platform="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://tiktok.com/@bmaxfilms" target="_blank" class="social-link" data-platform="tiktok">
+                            <i class="fab fa-tiktok"></i>
+                            <span>TikTok</span>
+                        </a>
+                        <a href="https://pinterest.com/bmaxfilms" target="_blank" class="social-link" data-platform="pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                            <span>Pinterest</span>
+                        </a>
+                        <a href="https://vimeo.com/bmaxfilms" target="_blank" class="social-link" data-platform="vimeo">
+                            <i class="fab fa-vimeo-v"></i>
+                            <span>Vimeo</span>
+                        </a>
+                        <a href="https://wa.me/2349052785535" target="_blank" class="social-link" data-platform="whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Instagram Accounts Section -->
+                <div class="instagram-accounts">
+                    <h3><i class="fab fa-instagram"></i> Our Instagram Channels</h3>
+                    <div class="ig-accounts-grid">
+                        <a href="https://instagram.com/Bmaxfilms" target="_blank" class="ig-account">
+                            <i class="fab fa-instagram"></i>
+                            <div class="ig-account-info">
+                                <h4>@BmaxFilms.Events</h4>
+                                <p>Wedding Cinematography</p>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/bmaxkidsvideos" target="_blank" class="ig-account">
+                            <i class="fab fa-instagram"></i>
+                            <div class="ig-account-info">
+                                <h4>@BmaxFilms.Kids</h4>
+                                <p>Kids Birthdays Videos</p>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/bmaxkidspictures" target="_blank" class="ig-account">
+                            <i class="fab fa-instagram"></i>
+                            <div class="ig-account-info">
+                                <h4>@BmaxFilms.KidsPictures</h4>
+                                <p>Kids Birthday Pictures</p>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/bmax_tv" target="_blank" class="ig-account">
+                            <i class="fab fa-instagram"></i>
+                            <div class="ig-account-info">
+                                <h4>@BmaxFilms.TV</h4>
+                                <p>BmaxFilms TV</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-card">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" action="https://formspree.io/f/xpwyrnwk" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="wedding">Wedding Cinematography</option>
+                                <option value="birthday">Birthday Celebrations</option>
+                                <option value="corporate">Corporate Events</option>
+                                <option value="documentary">Documentary Production</option>
+                                <option value="realestate">Real Estate Videos</option>
+                                <option value="commercial">Commercial Production</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Event Date</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-₦0.00">Under ₦0.00</option>
+                            <option value="0.00-0.00">₦0.00 - ₦0.00</option>
+                            <option value="0.00-0.00">₦0.00 - ₦0.00</option>
+                            <option value="0.00-0.00">₦0.00 - ₦0.00</option>
+                            <option value="over-0.00">Over ₦0.00</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Tell Us About Your Project *</label>
+                        <textarea id="message" name="message" placeholder="Share your vision, requirements, and any specific details about your project..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        <span>Send Message</span>
+                    </button>
+                </form>
+
+                <!-- Logo Section Under Form -->
+                <div class="form-logo-section">
+                    <img src="./pictures/Bmax-logo.png" alt="B-Max Films Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-calendar-alt"></i> How far in advance should I book?</h3>
+                    <p>We recommend booking at least 3-6 months in advance, especially for weddings and major events. However, we can often accommodate shorter notice depending on availability. Contact us to check our schedule.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3><i class="fas fa-box-open"></i> What's included in your packages?</h3>
+                    <p>Each package varies by service type, but generally includes pre-event consultation, professional filming with high-end equipment, professional editing, color grading, music licensing, and digital delivery. Specific details are outlined on our services page.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3><i class="fas fa-clock"></i> How long does editing take?</h3>
+                    <p>Editing timelines vary by project complexity. Wedding films typically take 4-6 weeks, while shorter projects like real estate videos are usually completed within 1-2 weeks. Rush delivery options are available for an additional fee.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3><i class="fas fa-plane"></i> Do you travel for events?</h3>
+                    <p>Yes! We serve clients across Abuja (FCT) and are available for events anywhere in Nigeria. Travel fees may apply for locations outside our standard service area. We love capturing stories in unique places across the country.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3><i class="fas fa-video"></i> What equipment do you use?</h3>
+                    <p>We use professional cinema cameras, stabilizers, drones, and audio equipment. Our gear includes the latest technology to ensure stunning 4K and even 6K footage with cinematic quality.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3><i class="fas fa-users"></i> How many videographers will be at my event?</h3>
+                    <p>This depends on your package and event size. Typically, we provide 1-3 videographers to ensure comprehensive coverage from multiple angles. We'll discuss the best option during consultation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="./pictures/Bmax-logo.png" alt="B-MaxFilms Logo" class="footer-logo-img">
+                    <h3>B-Max Films</h3>
+                </div>
+                <p>Professional cinematography services capturing life's most precious moments with artistic vision and technical excellence.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/bmaxfilms" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com/bmaxfilms" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/@bmaxfilms" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com/bmaxfilms" target="_blank" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://vimeo.com/bmaxfilms" target="_blank" aria-label="Vimeo">
+                        <i class="fab fa-vimeo-v"></i>
+                    </a>
+                    <a href="https://tiktok.com/@bmaxfilms" target="_blank" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html#wedding">Wedding Cinematography</a></li>
+                    <li><a href="services.html#birthday">Birthday Celebrations</a></li>
+                    <li><a href="services.html#corporate">Corporate Events</a></li>
+                    <li><a href="services.html#documentary">Documentary Production</a></li>
+                    <li><a href="services.html#realestate">Real Estate Videos</a></li>
+                    <li><a href="services.html#commercial">Commercial Production</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                 <p><i class="fas fa-envelope"></i>  Bmaxfilms@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>  +234 9052 785 535</p>
+                    <p><i class="fas fa-location-dot"></i>  FCT Abuja, Nigeria</p>
+                    <p><i class="fas fa-clock"></i>   Mon-Sun: 9:00 AM - 6:00 PM</p>
+                <div style="margin-top: 1rem;">
+                    <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem;">Instagram Channels:</h4>
+                    <p style="font-size: 0.85rem;"><a href="https://instagram.com/Bmaxfilms" target="_blank">@BmaxFilms.Events</a></p>
+                    <p style="font-size: 0.85rem;"><a href="https://instagram.com/bmaxkidsvideos" target="_blank">@BmaxFilms.Kids</a></p>
+                    <p style="font-size: 0.85rem;"><a href="https://instagram.com/bmaxkidspictures" target="_blank">@BmaxFilms.KidsPictures</a></p>
+                    <p style="font-size: 0.85rem;"><a href="https://instagram.com/bmax_tv" target="_blank">@BmaxFilms.TV</a></p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="book.html">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 B-Max Films. All rights reserved. | Designed by <a href="https://wa.me/2348140184955" target="_blank">Mentor</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Theme Toggle Widget -->
+<div class="theme-widget">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="theme-icon"><i class="fas fa-moon"></i></span>
+    </button>
+</div>
+
+<!-- WhatsApp Widget -->
+<div class="whatsapp-widget">
+    <a href="https://wa.me/+2349052785535?text=Hi! I'm interested in your cinematography services." target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+        <div class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </div>
+        <span class="whatsapp-text">WhatsApp</span>
+    </a>
+</div>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('.theme-icon i');
+        const html = document.documentElement;
+    
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+    
+        themeToggle.addEventListener('click', () => {
+            const theme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+            html.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            updateThemeIcon(theme);
+        });
+    
+        function updateThemeIcon(theme) {
+            themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        }
+    
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileDropdown = document.getElementById('mobileDropdown');
+    
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            mobileDropdown.classList.toggle('active');
+        });
+    
+        mobileDropdown.addEventListener('click', (e) => {
+            if (e.target === mobileDropdown) {
+                mobileMenuToggle.classList.remove('active');
+                mobileDropdown.classList.remove('active');
+            }
+        });
+    
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+    
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
+    
+        // GSAP Animations (your original code unchanged)
+        gsap.registerPlugin(ScrollTrigger);
+    
+        // Hero Animation
+        gsap.from('.contact-hero h1', {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            ease: 'power3.out'
+        });
+    
+        gsap.from('.contact-hero p', {
+            opacity: 0,
+            y: 30,
+            duration: 1,
+            delay: 0.3,
+            ease: 'power3.out'
+        });
+    
+        // Contact Info Cards Animation (kept scroll-triggered, but no opacity flash)
+        gsap.from('.info-item', {
+            scrollTrigger: {
+                trigger: '.contact-info-card',
+                start: 'top 80%',
+            },
+            y: -20,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: 'power3.out'
+        });
+    
+        // Social Icons Animation (now load-triggered for immediate visibility, no scroll wait)
+        gsap.from('.social-link', {
+            y: -10,
+            scale: 0.95,
+            duration: 0.5,
+            stagger: 0.1,
+            ease: 'back.out(1.7)'
+        });
+    
+        // Instagram Accounts Animation (now load-triggered for immediate visibility, no scroll wait)
+        gsap.from('.ig-account', {
+            y: 20,
+            duration: 0.6,
+            stagger: 0.15,
+            ease: 'power3.out'
+        });
+    
+        // Form Animation
+        gsap.from('.contact-form-card', {
+            scrollTrigger: {
+                trigger: '.contact-form-card',
+                start: 'top 80%',
+            },
+            opacity: 0,
+            x: 50,
+            duration: 1,
+            ease: 'power3.out'
+        });
+    
+        // FAQ Items Animation (no opacity flash, use y-offset only)
+        gsap.from('.faq-item', {
+            scrollTrigger: {
+                trigger: '.faq-section',
+                start: 'top 80%',
+            },
+            y: 30,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: 'power3.out'
+        });
+    
+        // Form Input Focus Animation
+        document.querySelectorAll('.form-group input, .form-group textarea, .form-group select').forEach(input => {
+            input.addEventListener('focus', function() {
+                gsap.to(this, {
+                    scale: 1.02,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+    
+            input.addEventListener('blur', function() {
+                gsap.to(this, {
+                    scale: 1,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+        });
+    
+        // Floating Animation for Social Icons
+        gsap.to('.social-link', {
+            y: -5,
+            duration: 2,
+            stagger: 0.1,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut'
+        });
+    
+        // WhatsApp Widget Pulse Animation
+        gsap.to('.whatsapp-widget', {
+            scale: 1.1,
+            duration: 1,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut'
+        });
+    
+        // FIXED: Bottom Mobile Nav Visibility and Active State (with GSAP timing fix)
+        function handleBottomNav() {
+            const bottomNav = document.getElementById('bottomMobileNav');
+            if (!bottomNav) {
+                console.error('Bottom nav element not found!');
+                return;
+            }
+    
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navItems = bottomNav.querySelectorAll('.bottom-nav-item');
+            
+            console.log('Current page detected:', currentPage); // Debug log
+            
+            // Set active item based on current page
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                const itemPage = item.getAttribute('data-page');
+                if (itemPage === 'contact' && currentPage.includes('contact')) {
+                    item.classList.add('active');
+                    console.log('Active set to Contact'); // Debug log
+                } else if (itemPage === 'home' && currentPage === 'index.html') {
+                    item.classList.add('active');
+                } else if (itemPage === 'services' && currentPage.includes('services')) {
+                    item.classList.add('active');
+                } else if (itemPage === 'book' && currentPage.includes('book')) {
+                    item.classList.add('active');
+                } else if (itemPage === 'portfolio' && currentPage.includes('portfolio')) {
+                    item.classList.add('active');
+                }
+            });
+            
+            // Show/hide based on screen size (with reflow to beat GSAP timing)
+            if (window.innerWidth <= 768) {
+                setTimeout(() => {
+                    bottomNav.classList.add('visible');
+                    bottomNav.offsetHeight; // Force reflow
+                    document.body.style.paddingBottom = '80px';
+                    console.log('Bottom nav set visible on mobile'); // Debug log
+                }, 100); // Short delay for GSAP to finish initial animations
+            } else {
+                bottomNav.classList.remove('visible');
+                document.body.style.paddingBottom = '';
+                console.log('Bottom nav hidden on desktop'); // Debug log
+            }
+        }
+    
+        // Run on DOM ready (ensures after GSAP setup) and resize
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', handleBottomNav);
+        } else {
+            handleBottomNav();
+        }
+        window.addEventListener('resize', handleBottomNav);
+    </script>
+</body>
+</html>

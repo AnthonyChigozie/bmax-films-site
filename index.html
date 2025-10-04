@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Bmaxfilms - Professional Cinematography & Photography in Abuja, Nigeria</title>
+
+<meta name="description" content="Bmaxfilms offers professional cinematography and photography for weddings, birthdays, documentaries, and real estate in Abuja, Nigeria. Capture your special moments with award-winning expertise.">
+<meta name="keywords" content="cinematography, videography, photography, Abuja photographer, wedding films, documentary, real estate video, birthday photography, professional video services, FCT Nigeria">
+<meta name="author" content="Bmaxfilms">
+<meta name="robots" content="index, follow">
+<meta name="language" content="English">
+
+<!-- Canonical URL (important for SEO) -->
+<link rel="canonical" href="https://bmaxfilms.netlify.app/">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Bmaxfilms - Professional Cinematography & Photography in Abuja">
+<meta property="og:description" content="Professional cinematography and photography services for weddings, birthdays, documentaries, and real estate in Abuja, Nigeria. Book your session today.">
+<meta property="og:image" content="https://bmaxfilms.netlify.app/images/Bmax-logo.png">
+<meta property="og:url" content="https://bmaxfilms.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bmaxfilms">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bmaxfilms - Cinematography & Photography in Abuja">
+<meta name="twitter:description" content="Cinematography and photography for weddings, birthdays, documentaries, and real estate in Abuja, Nigeria.">
+<meta name="twitter:image" content="https://bmaxfilms.netlify.app/images/Bmax-logo.png">
+<meta name="twitter:site" content="@bmaxfilms.com"> <!-- optional if you create Twitter -->
+<meta name="twitter:image" content="./elegant-wedding-cinematography.jpg">
+    
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTXQB47ZD8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LTXQB47ZD8');
+</script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    
+
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add this in your <head> before your custom JS GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Bmaxfilms",
+          "description": "Professional cinematography and photography services for weddings, birthdays, documentaries, and real estate in Abuja, Nigeria.",
+          "url": "https://bmaxfilms.netlify.app",
+          "telephone": "+234-905-278-5535",
+          "email": "bmaxfilms@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Abuja Central",
+            "addressLocality": "Abuja",
+            "addressRegion": "FCT",
+            "postalCode": "900001",
+            "addressCountry": "NG"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "9.0765",
+            "longitude": "7.3986"
+          },
+          "openingHours": "Mo-Su 09:00-18:00",
+          "priceRange": "₦₦",
+          "serviceArea": {
+            "@type": "AdministrativeArea",
+            "name": "FCT Abuja, Nigeria"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Cinematography and Photography Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Wedding Cinematography",
+                  "description": "Professional wedding videography and photography services."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Birthday Coverage",
+                  "description": "Event photography and cinematography for birthdays and private parties."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Documentary Production",
+                  "description": "Professional documentary filming and production."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Real Estate Photography & Videography",
+                  "description": "High-quality real estate photos and videos."
+                }
+              }
+            ]
+          }
+        }
+        </script>        
+</head>
+<body>
+    <!-- Animated Loader -->
+<div id="loader" class="loader">
+  <div class="loader-ring"></div>
+  <span class="loader-text">Loading...</span>
+</div>
+    <!-- Navigation -->
+    <nav class="navigation" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-container">
+                    <img src="./pictures/Bmax-logo.png" alt="B-Max Films Logo" class="logo-img">
+                    <span class="logo-text">B-Max Films</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="fas fa-home nav-icon"></i>
+                    Home
+                </a></li>
+                <li><a href="services.html">
+                    <i class="fas fa-video nav-icon"></i>
+                    Services
+                </a></li>
+                <li><a href="portfolio.html">
+                    <i class="fas fa-images nav-icon"></i>
+                    Portfolio
+                </a></li>
+                <li><a href="about.html">
+                    <i class="fas fa-users nav-icon"></i>
+                    About
+                </a></li>
+                <li><a href="contact.html" class="active">
+                    <i class="fas fa-envelope nav-icon"></i>
+                    Contact
+                </a></li>
+                <li><a href="book.html" class="cta-button">
+                    <i class="fas fa-calendar-check nav-icon"></i>
+                    Book Now
+                </a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <!-- Mobile Dropdown Menu -->
+        <div class="mobile-dropdown" id="mobileDropdown">
+            <div class="dropdown-content">
+                <div class="dropdown-header">
+                    <div class="dropdown-logo">
+                        <img src="./pictures/Bmax-logo.png" alt="B-Max Films Logo" class="dropdown-logo-img">
+                        <span class="dropdown-logo-text">B-Max Films</span>
+                    </div>
+                </div>
+                
+                <div class="dropdown-nav">
+                    <a href="index.html" class="dropdown-link">
+                        <i class="fas fa-home dropdown-icon"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="services.html" class="dropdown-link">
+                        <i class="fas fa-video dropdown-icon"></i>
+                        <span>Services</span>
+                    </a>
+                    <a href="portfolio.html" class="dropdown-link">
+                        <i class="fas fa-images dropdown-icon"></i>
+                        <span>Portfolio</span>
+                    </a>
+                    <a href="about.html" class="dropdown-link">
+                        <i class="fas fa-users dropdown-icon"></i>
+                        <span>About</span>
+                    </a>
+                    <a href="contact.html" class="dropdown-link">
+                        <i class="fas fa-envelope dropdown-icon"></i>
+                        <span>Contact</span>
+                    </a>
+                    <a href="book.html" class="dropdown-cta">
+                        <i class="fas fa-calendar-check dropdown-icon"></i>
+                        <span>Book Now</span>
+                    </a>
+                </div>
+
+                
+                 <div class="dropdown-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/bmax_tv" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Vimeo">
+                            <i class="fab fa-vimeo"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- ============================================
+         MOBILE BOTTOM NAVIGATION - HTML
+         ============================================ -->
+    
+         <nav class="bottom-mobile-nav" id="bottomMobileNav">
+            <div class="bottom-nav-container">
+                <a href="index.html" class="bottom-nav-item" data-page="home">
+                    <i class="fas fa-home bottom-nav-icon"></i>
+                    <span class="bottom-nav-label">Home</span>
+                </a>
+                <a href="services.html" class="bottom-nav-item" data-page="services">
+                    <i class="fas fa-video bottom-nav-icon"></i>
+                    <span class="bottom-nav-label">Services</span>
+                </a>
+                <a href="book.html" class="bottom-nav-item active" data-page="book">
+                    <i class="fas fa-calendar-check bottom-nav-icon"></i>
+                    <span class="bottom-nav-label">Book</span>
+                </a>
+                <a href="portfolio.html" class="bottom-nav-item" data-page="portfolio">
+                    <i class="fas fa-images bottom-nav-icon"></i>
+                    <span class="bottom-nav-label">Portfolio</span>
+                </a>
+                <a href="contact.html" class="bottom-nav-item" data-page="contact">
+                    <i class="fas fa-envelope bottom-nav-icon"></i>
+                    <span class="bottom-nav-label">Contact</span>
+                </a>
+            </div>
+        </nav>
+
+    <!-- Hero Section (Cinematographer) -->
+    <section class="cinema-hero" id="home">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="floating-gallery">
+            <div class="gallery-image"></div>
+            <div class="gallery-image"></div>
+            <div class="gallery-image"></div>
+            <div class="gallery-image"></div>
+            <div class="gallery-image"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="content-left">
+                <div class="brand">
+                    <div class="brand-text">Visual Storyteller</div>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="typing-text">CINEMATIC</span><br>
+                    VISION
+                </h1>
+
+                <p class="hero-subtitle">
+                    Capturing moments that tell extraordinary stories through the lens of creativity and artistic vision
+                </p>
+
+                <div class="hero-cta">
+                    <a href="portfolio.html" class="cta-btn btn-primary">View Portfolio</a>
+                    <a href="contact.html" class="cta-btn btn-secondary">Let's Create</a>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <div class="featured-showcase">
+                    <div class="showcase-main"></div>
+                    <div class="showcase-mini"></div>
+                    <div class="showcase-mini"></div>
+                    <div class="showcase-mini"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-stats">
+            <div class="stats-item">
+                <span class="stats-number">500+</span>
+                <span>Projects Captured</span>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+<section class="stats-section">
+    <div class="stats-container">
+        <div class="stats-grid">
+            <div class="stat-card slide-up" data-aos="fade-up">
+                <div class="stats-counter" data-target="500">0</div>
+                <p class="stat-label">Happy Couples</p>
+            </div>
+            <div class="stat-card slide-up" data-aos="fade-up" data-aos-delay="100">
+                <div class="stats-counter" data-target="1200">0</div>
+                <p class="stat-label">Events Captured</p>
+            </div>
+            <div class="stat-card slide-up" data-aos="fade-up" data-aos-delay="200">
+                <div class="stats-counter" data-target="50">0</div>
+                <p class="stat-label">Awards Won</p>
+            </div>
+            <div class="stat-card slide-up" data-aos="fade-up" data-aos-delay="300">
+                <div class="stats-counter" data-target="8">0</div>
+                <p class="stat-label">Years Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Services Preview -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 data-aos="fade-up">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Wedding Cinematography</h3>
+                    <p>Capture your special day with cinematic storytelling that preserves every emotion and detail of your wedding celebration.</p>
+                    <a href="services.html#wedding" class="service-link">Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3>Birthday Celebrations</h3>
+                    <p>Document milestone birthdays and celebrations with professional videography that captures the joy and excitement of your special day.</p>
+                    <a href="services.html#birthday" class="service-link">Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 4l2 4h-7l-2-4h7zM4 4l2 4H5l-2-4h1zM2 8v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8H2zm4 2h12v8H6v-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Documentary Production</h3>
+                    <p>Professional documentary filming and production services for corporate, educational, and personal storytelling projects.</p>
+                    <a href="services.html#documentary" class="service-link">Learn More</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                        </svg>
+                    </div>
+                    <h3>Real Estate Videos</h3>
+                    <p>Showcase properties with stunning real estate videography that highlights features and creates compelling virtual tours.</p>
+                    <a href="services.html#realestate" class="service-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Logos Slider -->
+    <section class="partners-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Trusted by Leading Brands</h2>
+            <div class="swiper logo-swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide logo-slide"><img src="./pictures/ochacho.png" alt="Ochacho Real Estate" loading="lazy"></div>
+                    <div class="swiper-slide logo-slide"><img src="./pictures/channels.png" alt="Channels TV" loading="lazy"></div>
+                    <div class="swiper-slide logo-slide"><img src="./pictures/ait.jpg" alt="AIT" loading="lazy"></div>
+                    <div class="swiper-slide logo-slide"><img src="./pictures/tvc.jpg" alt="TVC" loading="lazy"></div>
+                    <div class="swiper-slide logo-slide"><img src="./pictures/africanmagic.jpg" alt="Africanmagic" loading="lazy"></div>
+                    <div class="swiper-slide logo-slide"><img src="./pictures/mtn.jpeg" alt="Mtn" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Reviews -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 data-aos="fade-up">What Our Clients Say</h2>
+            <div class="reviews-carousel" data-aos="fade-up" data-aos-delay="200">
+                <div class="review-card active">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"B-Max Films captured our wedding day perfectly! The cinematic quality and attention to detail exceeded our expectations. We couldn't be happier with the final video."</p>
+                    <div class="reviewer">
+                        <strong>Khadija & Nasiru</strong>
+                        <span>Wedding Clients</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The documentary they created for our company was outstanding. Professional, creative, and delivered exactly what we envisioned. Highly recommended!"</p>
+                    <div class="reviewer">
+                        <strong>Obinna Okeke</strong>
+                        <span>Corporate Client</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Amazing real estate videos that helped sell our property quickly. The quality and professionalism of B-Max Films is unmatched."</p>
+                    <div class="reviewer">
+                        <strong>Precious Ogunleye</strong>
+                        <span>Real Estate Client</span>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" onclick="changeReview(-1)">❮</button>
+                <button class="carousel-btn next" onclick="changeReview(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./pictures/Bmax-logo.png" alt="B-MaxFilms Logo" class="footer-logo-img">
+                        <h3>B-Max Films</h3>
+                    </div>
+                    <p>Professional cinematography services capturing life's most precious moments with artistic vision and technical excellence.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/bmaxfilms" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/bmaxfilms" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com/@bmaxfilms" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://twitter.com/bmaxfilms" target="_blank" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://vimeo.com/bmaxfilms" target="_blank" aria-label="Vimeo">
+                            <i class="fab fa-vimeo-v"></i>
+                        </a>
+                        <a href="https://tiktok.com/@bmaxfilms" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#wedding">Wedding Cinematography</a></li>
+                        <li><a href="services.html#birthday">Birthday Celebrations</a></li>
+                        <li><a href="services.html#corporate">Corporate Events</a></li>
+                        <li><a href="services.html#documentary">Documentary Production</a></li>
+                        <li><a href="services.html#realestate">Real Estate Videos</a></li>
+                        <li><a href="services.html#commercial">Commercial Production</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                     <p><i class="fas fa-envelope"></i>  Bmaxfilms@gmail.com</p>
+                        <p><i class="fas fa-phone"></i>  +234 9052 785 535</p>
+                        <p><i class="fas fa-location-dot"></i>  FCT Abuja, Nigeria</p>
+                        <p><i class="fas fa-clock"></i>   Mon-Sun: 9:00 AM - 6:00 PM</p>
+                    <div style="margin-top: 1rem;">
+                        <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem;">Instagram Channels:</h4>
+                        <p style="font-size: 0.85rem;"><a href="https://instagram.com/Bmaxfilms" target="_blank">@BmaxFilms.Events</a></p>
+                        <p style="font-size: 0.85rem;"><a href="https://instagram.com/bmaxkidsvideos" target="_blank">@BmaxFilms.Kids</a></p>
+                        <p style="font-size: 0.85rem;"><a href="https://instagram.com/bmaxkidspictures" target="_blank">@BmaxFilms.KidsPictures</a></p>
+                        <p style="font-size: 0.85rem;"><a href="https://instagram.com/bmax_tv" target="_blank">@BmaxFilms.TV</a></p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="book.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 B-Max Films. All rights reserved.| Designed by <a href="https://wa.me/2348140184955" target="_blank">Mentor</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- Theme Toggle Widget -->
+    <div class="theme-widget">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <span class="theme-icon"><i class="fas fa-moon"></i></span>
+        </button>
+    </div>
+    
+    <!-- WhatsApp Widget -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/+2349052785535?text=Hi! I'm interested in your cinematography services." target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+            <div class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <span class="whatsapp-text">WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    <script>
+      
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Stats Counter Animation
+    const counters = document.querySelectorAll('.stats-counter');
+    let statsAnimated = false;
+
+    function animateCounters() {
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+            const duration = 1200; // ms
+            const step = Math.ceil(target / (duration / 20));
+            const update = () => {
+                count += step;
+                if (count < target) {
+                    counter.textContent = count;
+                    setTimeout(update, 20);
+                } else {
+                    counter.textContent = target;
+                }
+            };
+            update();
+        });
+    }
+
+    // Use Intersection Observer for animation trigger
+    const statsSection = document.querySelector('.stats-section');
+    if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting && !statsAnimated) {
+                animateCounters();
+                statsAnimated = true;
+            }
+        }, { threshold: 0.3 });
+        observer.observe(statsSection);
+    }
+
+});
+// Stats Counter Animation --- IGNORE ---
+document.addEventListener('DOMContentLoaded', () => {
+  // Stats Counter Animation
+  const counters = document.querySelectorAll('.stats-counter');
+  let statsAnimated = false;
+
+  function animateCounters() {
+      counters.forEach(counter => {
+          const target = +counter.getAttribute('data-target');
+          let count = 0;
+          const duration = 1200; // ms
+          const step = Math.ceil(target / (duration / 20));
+          const update = () => {
+              count += step;
+              if (count < target) {
+                  counter.textContent = count;
+                  setTimeout(update, 20);
+              } else {
+                  counter.textContent = target;
+              }
+          };
+          update();
+      });
+  }
+
+  // Use Intersection Observer for animation trigger
+  const statsSection = document.querySelector('.stats-section');
+  if (statsSection) {
+      const observer = new IntersectionObserver((entries) => {
+          if (entries[0].isIntersecting && !statsAnimated) {
+              animateCounters();
+              statsAnimated = true;
+          }
+      }, { threshold: 0.3 });
+      observer.observe(statsSection);
+  }
+
+  // GSAP Hero Animation (staggered)
+  gsap.from('.hero-content > *', {
+    y: 60,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.25,
+    ease: "power3.out"
+  });
+});
+
+        </script>
+</body>
+</html>

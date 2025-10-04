@@ -1,0 +1,7 @@
+# robots.txt for Bmaxfilms
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bmaxfilms.netlify.app/sitemap.xml
