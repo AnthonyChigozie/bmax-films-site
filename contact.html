@@ -1130,13 +1130,47 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     
-        // Form Submission
+        // Form Submission (AJAX)
         const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
-        });
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const submitBtn = contactForm.querySelector('[type="submit"]');
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<span><i class="fas fa-spinner fa-spin"></i> Sending...</span>';
+                }
+
+                try {
+                    const formData = new FormData(contactForm);
+                    const response = await fetch(contactForm.action, {
+                        method: contactForm.method || 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        // show a friendly success UI
+                        alert('Thank you — your message was sent. We will get back to you soon.');
+                        contactForm.reset();
+                    } else {
+                        const text = await response.text();
+                        console.error('Contact form submission failed', response.status, text);
+                        alert('There was an error sending your message. Please try again later.');
+                    }
+                } catch (err) {
+                    console.error('Contact form error', err);
+                    alert('Network error while sending message. Please check your connection and try again.');
+                } finally {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = '<span><i class="fas fa-paper-plane"></i> Send Message</span>';
+                    }
+                }
+            });
+        }
     
         // GSAP Animations (your original code unchanged)
         gsap.registerPlugin(ScrollTrigger);

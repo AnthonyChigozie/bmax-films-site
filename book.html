@@ -1049,7 +1049,7 @@
         <div class="booking-form-wrapper">
             <!-- Main Form -->
             <div class="booking-form-main">
-                <!-- FORMSPREE INTEGRATION:>
+                <!-- FORMSPREE INTEGRATION -->
                 <form id="bookingForm" action="https://formspree.io/f/mqaybjep" method="POST">
                     
                     <!-- Hidden Fields for Formspree -->
@@ -1508,51 +1508,93 @@
         }
 
         // Calendar Navigation
-        document.getElementById('prevMonth').addEventListener('click', () => {
+        const prevMonthBtn = document.getElementById('prevMonth');
+        if (prevMonthBtn) {
+            prevMonthBtn.addEventListener('click', () => {
             bookingSystem.currentMonth--;
             if (bookingSystem.currentMonth < 0) {
                 bookingSystem.currentMonth = 11;
                 bookingSystem.currentYear--;
             }
             generateCalendar();
-        });
+            });
+        }
 
-        document.getElementById('nextMonth').addEventListener('click', () => {
+        const nextMonthBtn = document.getElementById('nextMonth');
+        if (nextMonthBtn) {
+            nextMonthBtn.addEventListener('click', () => {
             bookingSystem.currentMonth++;
             if (bookingSystem.currentMonth > 11) {
                 bookingSystem.currentMonth = 0;
                 bookingSystem.currentYear++;
             }
             generateCalendar();
-        });
+            });
+        }
 
         // Form Submission
-        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        const bookingFormEl = document.getElementById('bookingForm');
+        if (bookingFormEl) {
+            bookingFormEl.addEventListener('submit', async function(e) {
+            e.preventDefault();
             // Validate required selections
             if (!bookingSystem.selectedService) {
-                e.preventDefault();
                 alert('Please select a service package');
                 return;
             }
             
             if (!bookingSystem.selectedDate) {
-                e.preventDefault();
                 alert('Please select a date');
                 return;
             }
             
             if (!bookingSystem.selectedTime) {
-                e.preventDefault();
                 alert('Please select a time');
                 return;
             }
-            
-            // FORMSPREE: Form will be submitted to Formspree
-            // After submission, show success modal
+
+            // Disable submit and show spinner
             const submitBtn = document.getElementById('submitBtn');
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span><i class="fas fa-spinner fa-spin"></i> Submitting...</span>';
-        });
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<span><i class="fas fa-spinner fa-spin"></i> Submitting...</span>';
+            }
+
+            try {
+                const formData = new FormData(bookingFormEl);
+                // Ensure hidden inputs are present and up-to-date
+                formData.set('service', document.getElementById('selectedServiceInput')?.value || '');
+                formData.set('event_date', document.getElementById('selectedDateInput')?.value || '');
+                formData.set('event_time', document.getElementById('selectedTimeInput')?.value || '');
+                formData.set('total_price', document.getElementById('totalPriceInput')?.value || '');
+
+                const response = await fetch(bookingFormEl.action, {
+                    method: bookingFormEl.method || 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Show success modal and populate reference/email
+                    showSuccessModal();
+                } else {
+                    const text = await response.text();
+                    console.error('Booking submission failed', response.status, text);
+                    alert('There was an error submitting your booking. Please try again later.');
+                }
+            } catch (err) {
+                console.error('Booking submission error', err);
+                alert('Network error while submitting booking. Please check your connection and try again.');
+            } finally {
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<span><i class="fas fa-paper-plane"></i> Submit Booking Request</span>';
+                }
+            }
+            });
+        }
 
         // Success Modal Functions
         function showSuccessModal() {

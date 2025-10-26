@@ -124,16 +124,28 @@ window.addEventListener('load', () => {
     })
   }
 
-  // Smooth scrolling for anchor links
+  // Smooth scrolling for anchor links (ignore bare "#" anchors and invalid selectors)
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
-      e.preventDefault()
-      const target = document.querySelector(this.getAttribute("href"))
-      if (target) {
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        })
+      const href = this.getAttribute("href") || "";
+      // Ignore bare "#" (no target) or empty hrefs
+      if (!href || href === "#") return;
+
+      // Only attempt querySelector for valid fragment identifiers like "#section"
+      if (href.startsWith('#') && href.length > 1) {
+        e.preventDefault()
+        try {
+          const target = document.querySelector(href)
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            })
+          }
+        } catch (err) {
+          // If an invalid selector somehow gets here, log and continue without throwing
+          console.warn('Invalid anchor selector:', href, err)
+        }
       }
     })
   })
@@ -387,13 +399,14 @@ if (typeof gtag !== "undefined") {
 // Service Worker Registration for PWA capabilities
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
+    // Use a relative path so registration works when served from a local folder
     navigator.serviceWorker
-      .register("/sw.js")
+      .register("./sw.js")
       .then((registration) => {
-        console.log("ServiceWorker registration successful")
+        console.log("ServiceWorker registration successful", registration)
       })
       .catch((err) => {
-        console.log("ServiceWorker registration failed")
+        console.error("ServiceWorker registration failed:", err)
       })
   })
 }
@@ -450,6 +463,8 @@ if (document.readyState === 'loading') {
 // Bottom Mobile Nav Visibility and Active State
 function handleBottomNav() {
   const bottomNav = document.getElementById('bottomMobileNav');
+  if (!bottomNav) return; // guard: exit early when nav is not present on the page
+
   const currentPage = window.location.pathname.split('/').pop() || 'index.html'; // Gets 'contact.html'
   const navItems = bottomNav.querySelectorAll('.bottom-nav-item');
   
@@ -480,16 +495,25 @@ function handleBottomNav() {
   }
 }
 
-// Run on load and resize
-handleBottomNav();
+// Run on DOM ready and resize (safer: only run after DOM exists)
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', handleBottomNav);
+} else {
+  handleBottomNav();
+}
+
 window.addEventListener('resize', handleBottomNav);
 
 //This is for on scroll appearance of botton-menu
 let scrollTimeout;
 window.addEventListener('scroll', () => {
-    clearTimeout(scrollTimeout);
-    bottomNav.classList.remove('visible');
-    scrollTimeout = setTimeout(() => {
-        if (window.innerWidth <= 768) bottomNav.classList.add('visible');
-    }, 3000); // Re-show after 3s idle
+  // Safely reference the bottom nav element (it may be absent on some pages)
+  const bottomNavEl = document.getElementById('bottomMobileNav');
+  if (!bottomNavEl) return;
+
+  clearTimeout(scrollTimeout);
+  bottomNavEl.classList.remove('visible');
+  scrollTimeout = setTimeout(() => {
+    if (window.innerWidth <= 768) bottomNavEl.classList.add('visible');
+  }, 3000); // Re-show after 3s idle
 });
