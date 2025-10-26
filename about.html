@@ -876,6 +876,21 @@
                 padding: 80px 0;
             }
         }
+        /* Fix cropping on very small screens (iPhone 6/7/8 Plus, small phones) */
+        @media (max-width: 414px) {
+            .founder-image {
+                max-width: 100%;
+            }
+            .founder-image img {
+                /* let the image scale naturally while keeping cover; show top of image */
+                height: auto;
+                max-height: 340px;
+                width: 100%;
+                object-fit: cover;
+                object-position: top center; /* ensure top part remains visible */
+                border-radius: 12px;
+            }
+        }
         .values-section .section-header p {
         align-items: center;
         text-align: center;
